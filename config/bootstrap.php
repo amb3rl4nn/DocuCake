@@ -198,6 +198,8 @@ if (Configure::read('debug')) {
     Plugin::load('DebugKit', ['bootstrap' => true]);
 }
 
+Plugin::load('CakeRegistry', ['routes' => true, 'autoload' => true]);
+
 /**
  * Connect middleware/dispatcher filters.
  */
